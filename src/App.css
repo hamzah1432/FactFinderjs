@@ -1,0 +1,360 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: white;
+}
+
+.Auth {
+  display: flex;
+  height: 100%;
+}
+
+.Auth .LeftSide {
+  flex-grow: 1;
+  background-image: url("/public/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 52px 64px;
+}
+
+.Auth .RightSide {
+  display: flex;
+  flex-direction: column;
+  padding: 52px 64px;
+  flex-grow: 1;
+}
+
+.Auth .RightSide .Form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Signup,
+.Verify,
+.Login,
+.SetPasswprd {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 405px;
+}
+
+.Signup h1,
+.Verify h1,
+.Login h1,
+.SetPasswprd h1 {
+  color: #000;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+
+.Signup h2,
+.Verify h2,
+.Login h2,
+.SetPasswprd h2 {
+  color: #95989d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.Signup .Social {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.Signup .Social button {
+  padding: 10px 24px;
+  background-color: transparent;
+  color: #100c0d;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: solid 1px #dfdfdf;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.Signup .Social button.Google {
+  border: solid 1px #8ac199;
+}
+
+.Signup .MiddleLine h3 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.Signup .MiddleLine h3 span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Signup .SignupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Signup .SignupForm input {
+  min-width: 372px;
+  width: 100%;
+  min-height: 68px;
+  padding: 0 24px;
+  background-color: white;
+  border: solid 1px #e5e5e5;
+  border-radius: 12px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+}
+.Signup .SignupForm .IconBox {
+  position: relative;
+}
+
+.Signup .SignupForm .IconBox .material-symbols-outlined {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #c6c6c6;
+}
+
+.Signup form button,
+.Verify form button {
+  min-width: 405px;
+  min-height: 68px;
+  border-radius: 12px;
+  background-color: #633ade;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Verify .VerifyForm {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Verify .VerifyForm .code {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Verify .VerifyForm .code input {
+  width: 56px;
+  height: 56px;
+  background-color: white;
+  border: solid 2px #e8e8e8;
+  border-radius: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.Verify .VerifyForm .code input:focus-visible {
+  outline: #9c9b9b auto 1px;
+}
+.Verify span {
+  color: #b0aeb1;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Verify a {
+  color: #385797;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Login .LoginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.Login .LoginForm label {
+  color: #88898d;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 4px;
+}
+
+.Login .LoginForm input {
+  min-width: 372px;
+  width: 100%;
+  min-height: 68px;
+  padding: 0 24px;
+  background-color: white;
+  border: solid 1px #e5e5e5;
+  border-radius: 12px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.Login .LoginForm .RememberPassword {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.Login .LoginForm .RememberPassword label {
+  display: flex;
+  align-items: center;
+  color: #565758;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.Login .LoginForm input[type="checkbox"] {
+  min-width: 16px;
+  width: 16px;
+  min-height: 16px;
+  margin: 0;
+}
+
+.Login .LoginForm .RememberPassword a {
+  display: flex;
+  align-items: center;
+  color: #efb2b7;
+  font-size: 12px;
+  text-decoration-line: none;
+  font-weight: 600;
+  gap: 8px;
+}
+
+.Login .LoginForm button {
+  min-width: 405px;
+  min-height: 68px;
+  border-radius: 12px;
+  background-color: #633ade;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Login span {
+  color: #909195;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Login span a {
+  color: #748ec7;
+  font-weight: 600;
+  text-decoration-line: none;
+}
+
+.SetPasswprd .SetPasswprdForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 32px;
+}
+
+.SetPasswprd .SetPasswprdForm label {
+  color: #88898d;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-left: 4px;
+}
+
+.SetPasswprd .SetPasswprdForm input {
+  min-width: 372px;
+  width: 100%;
+  min-height: 68px;
+  padding: 0 24px;
+  background-color: white;
+  border: solid 1px #e5e5e5;
+  border-radius: 12px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+.SetPasswprd .IconBox {
+  position: relative;
+}
+
+.SetPasswprd .IconBox .material-symbols-outlined {
+  position: absolute;
+  right: 24px;
+  top: 34px;
+  cursor: pointer;
+  color: #c6c6c6;
+}
+.SetPasswprd .SetPasswprdForm button {
+  min-width: 405px;
+  min-height: 68px;
+  border-radius: 12px;
+  background-color: #633ade;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.Successful {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 20px;
+}
+
+.Successful h1 {
+  color: #020202;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 0;
+  margin-bottom: 10;
+  text-align: center;
+
+}
+
+.Successful h2 {
+  text-align: center;
+  color: #929292;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 4px;
+}
