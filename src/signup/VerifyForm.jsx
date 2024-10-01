@@ -22,7 +22,13 @@ function VerifyForm() {
 
     return (
         <>
-            <a >
+
+<div className='Auth'>
+      <div className='LeftSide'>
+        <img src="/logo.png" alt="logo" />
+      </div>
+      <div className='RightSide'>
+      <a >
                 <img style={{ cursor: "pointer" }} src="/BackButton.png" alt="BackIcon"  />
             </a>
             <div className='Form'>
@@ -86,6 +92,9 @@ function VerifyForm() {
                     <span>{"Haven't got the email yet? "}<a href='#'>Resend email</a></span>
                 </div>
             </div>
+      </div>
+    </div>
+           
         </>
 
     );

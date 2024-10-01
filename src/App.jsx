@@ -11,19 +11,16 @@ import VerifyForm from './signup/VerifyForm'
 
 function App() {
   return (
-    <div className='Auth'>
-      <div className='LeftSide'>
-        <img src="/logo.png" alt="logo" />
-      </div>
-      <div className='RightSide'>
-        <ForgetPassword />
-        {/* <LoginForm /> */}
-        {/* <SetPassword /> */}
-        {/* <Successful /> */}
-        {/* <VerifyForm /> */}
-        {/* <SignupForm  /> */}
-      </div>
-    </div>
+    <>
+
+      {/* <ForgetPassword /> */}
+      {/* <LoginForm /> */}
+      {/* <SetPassword /> */}
+      {/* <Successful /> */}
+      {/* <VerifyForm /> */}
+      {/* <SignupForm  /> */}
+    </>
+
   )
 }
 

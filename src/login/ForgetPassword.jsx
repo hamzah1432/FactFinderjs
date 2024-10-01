@@ -21,7 +21,13 @@ function ForgetPassword() {
 
     return (
         <>
-            <a >
+
+            <div className='Auth'>
+                <div className='LeftSide'>
+                    <img src="/logo.png" alt="logo" />
+                </div>
+                <div className='RightSide'>
+                <a >
                 <img style={{ cursor: "pointer" }} src="/BackButton.png" alt="BackIcon"  />
             </a>
             <div className='Form'>
@@ -41,6 +47,8 @@ function ForgetPassword() {
                         </div>
                         <button type="submit">Reset Password</button>
                     </form>
+                </div>
+            </div>
                 </div>
             </div>
 
